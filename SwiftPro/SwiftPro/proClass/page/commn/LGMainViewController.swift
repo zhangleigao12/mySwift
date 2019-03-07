@@ -8,12 +8,12 @@
 
 import UIKit
 
-class LGMainViewController: UIViewController {
+class LGMainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
     }
     
 
