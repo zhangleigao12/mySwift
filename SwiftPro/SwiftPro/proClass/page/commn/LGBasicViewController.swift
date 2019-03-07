@@ -10,10 +10,18 @@ import UIKit
 
 class LGBasicViewController: UIViewController {
 
+    lazy var navigationBar = LGNavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.WIDTH, height: 64))
+    lazy var naviItem = UINavigationItem()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        // Do any additional setup after loading the view.
+        
+    }
+    
+    override var title: String? {
+        didSet {
+            naviItem.title = title
+        }
     }
 
 }
@@ -21,5 +29,9 @@ class LGBasicViewController: UIViewController {
 extension LGBasicViewController {
     public func setupUI() {
         view.backgroundColor = UIColor.init().randColor
+        view.addSubview(navigationBar)
+        navigationBar.items = [naviItem]
+        navigationBar.backgroundColor = UIColor(hex: "#f6f6f6")
+        navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(hex: "#606060")]
     }
 }

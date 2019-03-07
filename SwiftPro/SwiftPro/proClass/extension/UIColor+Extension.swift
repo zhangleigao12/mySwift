@@ -55,9 +55,9 @@ extension UIColor {
     var randColor: UIColor {
         get {
             
-            let red = CGFloat(arc4random()%256)/255.0
-            let green = CGFloat(arc4random()%256)/255.0
-            let blue = CGFloat(arc4random()%256)/255.0
+            let red = CGFloat(drand48())
+            let green = CGFloat(drand48())
+            let blue = CGFloat(drand48())
             
             return UIColor(red: red, green: green, blue: blue, alpha: 1)
             
