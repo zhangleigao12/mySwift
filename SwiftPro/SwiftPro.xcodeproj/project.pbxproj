@@ -23,6 +23,7 @@
 		7600C5F92230AD91002D2524 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600C5F82230AD91002D2524 /* Bundle+Extension.swift */; };
 		7600C5FB2230AE63002D2524 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600C5FA2230AE63002D2524 /* UIButton+Extension.swift */; };
 		7600C5FD2230BE5F002D2524 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600C5FC2230BE5F002D2524 /* UIScreen+Extension.swift */; };
+		7600C5FF2230C010002D2524 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600C5FE2230C010002D2524 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		7600C5F82230AD91002D2524 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		7600C5FA2230AE63002D2524 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		7600C5FC2230BE5F002D2524 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		7600C5FE2230C010002D2524 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 				7600C5F82230AD91002D2524 /* Bundle+Extension.swift */,
 				7600C5FA2230AE63002D2524 /* UIButton+Extension.swift */,
 				7600C5FC2230BE5F002D2524 /* UIScreen+Extension.swift */,
+				7600C5FE2230C010002D2524 /* UIColor+Extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				7600C5BB2230A7ED002D2524 /* SwiftPro.xcdatamodeld in Sources */,
 				7600C5F92230AD91002D2524 /* Bundle+Extension.swift in Sources */,
 				7600C5FB2230AE63002D2524 /* UIButton+Extension.swift in Sources */,
+				7600C5FF2230C010002D2524 /* UIColor+Extension.swift in Sources */,
 				7600C5FD2230BE5F002D2524 /* UIScreen+Extension.swift in Sources */,
 				7600C5F12230ABF1002D2524 /* LGNavigationController.swift in Sources */,
 				7600C5ED2230AAC9002D2524 /* LGBasicViewController.swift in Sources */,
