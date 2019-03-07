@@ -13,18 +13,38 @@ class LGMainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        setChildViewControllers()
+    }
+}
+
+extension LGMainViewController {
+    
+    private func setController(dict:[String: String]) -> UIViewController{
+        guard let clName = dict["className"],
+            let clTitle = dict["title"],
+            let lc = NSClassFromString(Bundle.main.spaceName + "." + clName) as? UIViewController.Type
+            
+            else {
+                return UIViewController()
+        }
+        let vc = lc.init()
+        vc.title = clTitle
+        let nav = LGNavigationController.init(rootViewController: vc)
+        return nav
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setChildViewControllers() {
+        let arr = [
+            ["className": "HomeViewController", "title": "首页"],
+            ["className": "DisCoverViewController", "title": "发现"],
+            ["className": "PersonViewController", "title": "我的"],
+        ]
+        var controllerArray = [UIViewController]()
+        
+        
+        for dict in arr {
+            controllerArray.append(setController(dict: dict))
+        }
+        viewControllers = controllerArray
     }
-    */
-
 }
